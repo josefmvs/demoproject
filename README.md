@@ -26,7 +26,7 @@ Steps in running the Test
 2. Go to the projects root folder
 3. Execute 'npm run test'
 4. Browser opens to show results
-5. Click button to show new results if there are updates to app code
+5. Click DEBUG button to show new results if there are updates to app code
 
 
 Required from this Demo App
