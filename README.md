@@ -1,4 +1,4 @@
-Ionic Unit Testing Example
+Demo Project
 =====================
 
 This repository is an example project that gives guidance on setting up your Ionic application for unit testing and end-to-end (E2E) testing. We have been told the folks at Ionic will be adding testing features to new projects in the future. But until then, feel free to borrow from this project as needed.
