@@ -1,0 +1,41 @@
+<!--
+  Generated template for the AppointmentAddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New Project</ion-title>
+     <ion-buttons start>
+          <button ion-button icon-only (click)="closeModal()"><ion-icon name="arrow-back"></ion-icon></button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+     <ion-list>
+        <form [formGroup]="projectAddForm">
+        <ion-item>
+          <ion-label><ion-icon name="paper"></ion-icon></ion-label>
+          <!--<ion-input formControlName="title" [class.invalid]="!projectAddForm.controls.title.valid && (projectAddForm.controls.title.dirty || submitAttempt)" [(ngModel)]="title" placeholder="project title" type="text"></ion-input>-->
+          <ion-input [class.invalid]="!projectAddForm.controls.title.valid && (projectAddForm.controls.title.dirty || submitAttempt)" formControlName="title" [(ngModel)]="title" placeholder="project title" type="text"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="projectAddForm.controls.title.pending">
+                <p>Checking username...</p>
+            </ion-item>
+         <ion-item *ngIf="!projectAddForm.controls.title.valid && !projectAddForm.controls.title.pending && (projectAddForm.controls.title.dirty || submitAttempt)">
+                <p>Sorry, that project title can not be used!</p>
+            </ion-item>
+        <!--<ion-item *ngIf="!projectAddForm.controls.title.valid  && (projectAddForm.controls.title.dirty || submitAttempt)">
+            <p>Please enter a different project title.</p>
+        </ion-item>-->
+        
+      </form>  
+    </ion-list>
+    <button ion-button block (click)="save()">Save</button>
+</ion-content>

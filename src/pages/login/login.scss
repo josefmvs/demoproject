@@ -1,0 +1,43 @@
+page-login {
+     .scroll-content {
+      
+        display: flex;
+        flex-direction: column;
+      }
+ 
+      ion-row {
+        align-items: center;
+        text-align: center;
+      }
+ 
+      ion-item {
+          border-radius: 30px !important;
+          padding-left: 10px !important;
+          margin-bottom: 10px;
+          font-size: 0.9em;
+      }
+ 
+      ion-list {
+          margin: 0;
+      }
+ 
+      .login-logo {
+        flex: 2;
+      }
+ 
+      .login-form {
+          flex: 1;
+      }
+
+ 
+      .login-button {
+          width: 100%;
+          border-radius: 30px;
+          font-size: 0.9em;
+      }
+
+       .invalid {
+          border: 1px solid #ea6153;
+      }
+
+}
