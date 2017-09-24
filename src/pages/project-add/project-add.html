@@ -26,7 +26,7 @@
           <ion-input [class.invalid]="!projectAddForm.controls.title.valid && (projectAddForm.controls.title.dirty || submitAttempt)" formControlName="title" [(ngModel)]="title" placeholder="project title" type="text"></ion-input>
         </ion-item>
         <ion-item *ngIf="projectAddForm.controls.title.pending">
-                <p>Checking username...</p>
+                <p>Checking...</p>
             </ion-item>
          <ion-item *ngIf="!projectAddForm.controls.title.valid && !projectAddForm.controls.title.pending && (projectAddForm.controls.title.dirty || submitAttempt)">
                 <p>Sorry, that project title can not be used!</p>
