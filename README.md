@@ -7,11 +7,15 @@ STEPS in using the Demo
 
   Username: demouser
   Password: demouser
-
-  Or if you want to create a new account
-
-  Click Sign In at the bottom of the Login page. Make sure your username and password is more than 4 chars to be valid in login.
+  Please wait for a few seconds for it to connect to cloud server
   
+  Or if you want to create a new account by signing up
+
+  Click Sign Up at the bottom of the Login page. 
+  Make sure the username and password is more than 4 chars to be valid in login.
+  Please wait for a few seconds for it to connect to cloud server after saving
+  Sign Up has no error handling so make sure to correctly fill-it up.
+  Don't use the same username and email address. Check the form and try submitting again if nothing happens after a few sec.
   
 3. Onece logged-in you can disconnect from internet to see the local storage works using Pouchdb.
 
