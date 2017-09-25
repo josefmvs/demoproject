@@ -1,6 +1,9 @@
-page-login {
-     .scroll-content {
-      
+.ios, .md {
+ 
+  page-login {
+ 
+      .scroll-content {
+        // background-color: map-get($colors, secondary);
         display: flex;
         flex-direction: column;
       }
@@ -14,10 +17,11 @@ page-login {
           border-radius: 30px !important;
           padding-left: 10px !important;
           margin-bottom: 10px;
+        //   background-color: #f6f6f6;
+          opacity: 0.7;
           font-size: 0.9em;
       }
- 
-      ion-list {
+ ion-list {
           margin: 0;
       }
  
@@ -28,16 +32,25 @@ page-login {
       .login-form {
           flex: 1;
       }
-
+ 
+      .create-account {
+        margin-top: 100px;
+        // color: #fff;
+        text-decoration: underline;
+        background: none;
+        z-index: 200;
+      }
  
       .login-button {
           width: 100%;
           border-radius: 30px;
           font-size: 0.9em;
+        //   background-color: transparent;
+          border: 1px solid #fff;
       }
 
-       .invalid {
-          border: 1px solid #ea6153;
       }
-
+ 
 }
+
+
