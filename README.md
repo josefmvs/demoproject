@@ -40,6 +40,6 @@ Functions:
 * Create a Projects screen which lists the available projects (using the Ionic list components) and has a toolbar button to create a new project.
 * Create a Projects service class which uses Pouchdb local Storage to store and retrieve the projects
 * A Project has a name, and the name must be unique. Creating another project with the same name will have a validation error
-* Develop unit tests for the Projects screen
+* Unit tests for the Projects screen
  
 
